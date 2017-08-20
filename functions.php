@@ -307,8 +307,6 @@ function materialized_comment($comment, $args, $depth) {
 <?php
 }
 
-
-add_filter('the_content', 'wpse_ad_T');
 add_action('wp_head', 'create_meta_desc');
 
 function create_meta_desc() {
@@ -357,24 +355,6 @@ function wpse_54258_run_only_once(){
 //'football'     =>//'jersey'//'vaporizer'     =>
 //}
 
-function addSignin(){
-			echo '<div class="item1">
-						  <div id="gConnect" class="button">
-						<button class="g-signin"
-								data-scope="email"
-								data-clientid="841077041629.apps.googleusercontent.com"
-								data-callback="onSignInCallback"
-								data-theme="dark"
-								data-cookiepolicy="single_host_origin">
-						</button>
-      <!-- Textarea for outputting data -->
-						<div id="response" class="hide">
-				<textarea id="responseContainer" style="width:100%; height:150px"></textarea>
-						</div>
-					</div>
-				</div><div class="item2"></div>';
-				return;
-}
 
 
 function switchHead(){
@@ -527,34 +507,6 @@ $APPLICATION_KEY='be54f0e53443501357865cbc055538aa';
    wp_set_post_tags( $ID, $keywords, true );
 } 
  
-function wpse_ad_T($content){
-    if (!is_single()) return $content;
-    $paragraphAfter = 2; //Enter number of paragraphs to display ad after.
-$paragraphAfterT = 6; //Enter number of paragraphs to display ad after.
- $paragraph4After = 9;
-   $content = explode("</p>", $content);
-    $new_content = '';  $new_contentT = '';
-    for ($i = 0; $i < count($content); $i++) {
-        if ($i == ($paragraphAfter || $paragraph4After)) {
-            $new_content= '<div style="width: 320px; height: 100px; padding: 0px 0px 0px 0; float: left; margin-left: 0; margin-right: 18px;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- mob lg banner --><ins class="adsbygoogle"
-     style="display:inline-block;width:320px;height:100px"
-     data-ad-client="ca-pub-4943462589133750"
-     data-ad-slot="5993932022"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>';
-        }
-    	if ($i == $paragraphAfterT) {
-            $new_contentT= '<div style="width: 336px; height: 280px; padding: 0px 0px 0px 0; float: right; margin-left: 18px; margin-right: 0;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- tinyhands --><ins class="adsbygoogle"
-     style="display:inline-block;width:336px;height:280px"
-     data-ad-client="ca-pub-4943462589133750"
-     data-ad-slot="1808495228"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>';
-        }
-        $new_contentT= $content[$i] . "</p>";		$new_content= $content[$i] . "</p>";
-    }
-    return $new_contentT;	
-	}
 function wpsidebar_widgets_init() {
  	register_sidebar( array(
 		'name' => 'Newsletter',

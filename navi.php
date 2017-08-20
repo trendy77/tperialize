@@ -1,7 +1,6 @@
 <?php //<div class="nav-wrapper black container">  ?>
 
 <nav class="right dark brown" role="navigation">
-
 <img id="logo-container" type="image/gif" src="timg/logo.gif" height="50" width="50">Logo</a>
     <div class="container align right">
 	   <ul class="right">

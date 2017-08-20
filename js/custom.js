@@ -1,23 +1,20 @@
-jQuery(document).ready(function ($) {
- 
-  $('.button-collapse').sideNav({
-      menuWidth: 240, // Default is 240
-      edge: 'left', // Choose the horizontal origin
-      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    }
-  );
- 	$('li.menu-item').addClass('waves-effect waves-light');
-	$('.parallax').parallax();
-    $(".dropdown-button").dropdown();
-
-    }); // end of document ready
+jQuery(document).ready(function($) {
+$('.button-collapse').sideNav({
+    menuWidth: 240, // Default is 240
+    edge: 'left', // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+});
+$('li.menu-item').addClass('waves-effect waves-light');
+$('.parallax').parallax();
+$(".dropdown-button").dropdown();
+$('.scrollspy').scrollSpy();
+}); // end of document ready
 })(jQuery); // end of jQuery name space
 
 // FACEBOOK
-
 window.fbAsyncInit = function() {
     FB.init({
-        appId: "<?php getSiteDeets('$fbappId'); ?>"
+        appId: "<?php echo $FBAPPID; ?>"
         cookie: true, // enable cookies to allow the server to access session
         xfbml: true, // parse social plugins on this page
         version: 'v2.9' // use graph api version 2.8
@@ -80,7 +77,7 @@ function testAPI() {
     a.src = g;
     m.parentNode.insertBefore(a, m)
 })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-ga('create', '<?php echo getSiteDeets('$ua'); ?>', 'auto');
+ga('create', '<?php echo $UA; ?>', 'auto');
 //ga('require', '');
 ga('send', 'pageview');
 
