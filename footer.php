@@ -16,17 +16,8 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'tperialize' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-			
-			
-			
-			?></a>
+			<?php amazonAdvert(2); ?>
 			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'tperialize' ), 'tperialize', '<a href="https://automattic.com/">trendy</a>' );
-			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

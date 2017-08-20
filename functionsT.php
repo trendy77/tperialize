@@ -1,6 +1,7 @@
 <?php
 add_filter('the_content', 'wpse_ad_T');
 add_action('wp_head', 'insertwinLive');
+add_action('wp_footer', 'footScr');
 add_action( 'wp_head', 'insert_fb_in_head', 5 );
 add_filter('language_attributes', 'add_opengraph_doctype');
 /// ALSO ADDSIGNIN() , ADDLIKEIN)()   	
@@ -26,8 +27,17 @@ echo "<script>
     s.src = '//cdn.viglink.com/api/vglnk.js';
     var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
   }(document, 'script'));
-</script>";
+</script>   <script async src = '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' > </script>
+        < script > (adsbygoogle = window . adsbygoogle || []) . push({
+        google_ad_client :'ca-pub-4943462589133750' ,
+            enable_page_level_ads : true
+    }
+    );
+    </script>";
 
+
+
+    function footScr(){
 echo "
   <script>
     // Load the SDK asynchronously
@@ -83,17 +93,7 @@ function testAPI() {
         document.getElementById('status').innerHTML =
             'Thanks for logging in, ' + response.name + '!';
     });
-}</script> 
-  
-<script async src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
-	<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client:'ca-pub-4943462589133750',
-    enable_page_level_ads: true
-  });
-  </script>";
-
-echo "<!-- Twitter Button -->
+}</script> <!-- Twitter Button -->
         <script>
             ! function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0],
