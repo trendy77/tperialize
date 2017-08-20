@@ -6,7 +6,7 @@
  *
  * @package tperialize
  */
-
+include_once('functionsT.php');
 if ( ! function_exists( 'tperialize_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.

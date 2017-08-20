@@ -81,6 +81,7 @@ ga('create', '<?php echo $UA; ?>', 'auto');
 //ga('require', '');
 ga('send', 'pageview');
 
+
 (adsbygoogle = window.adsbygoogle || []).push({
     google_ad_client: "ca-pub-4943462589133750",
     enable_page_level_ads: true
