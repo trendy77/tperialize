@@ -34,7 +34,7 @@ echo "<script>
     }
     );
     </script>";
-
+}
 
 
     function footScr(){
