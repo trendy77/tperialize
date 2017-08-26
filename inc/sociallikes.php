@@ -1,25 +1,5 @@
 <?php
- 
-
-function getSiteDeets($whichDeets) {
- 			switch ($whichDeets){
-				case '$path':		return '/home/organ151/public_html/tp';		break;
-				case '$user':		return 'theCreator';						break;
-				case '$pass':		return 'Joker999!';							break;
-				case '$addy':		return 'trendypublishing.com';				break;
-					case '$ua':		return 'UA-84079763-11';					break;
-					case '$gtm':	return '';									break;
-			case '$fbpageid':return '1209167032497461';					break;
-			case '$fbappid':return '867691370038214';		break;
-				case '$hash':return '@TrendyPublishin';					break;
-				case '$twitcnkey' : return ''; break;
-				case '$twitcnsrt' : return ""; break;
-				case '$twitkey': return ""; break;
-				case '$twitscrt':return ""; break;
-			}	
-	}
-	}
- #    <!--login with FB button-->
+  #    <!--login with FB button-->
 	  echo '<div class="fb-login-button" data-max-rows="2" data-size="large" data-button-type="login_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="false"></div>';
 
 #     <!--twitter Button-->

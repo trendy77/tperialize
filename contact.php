@@ -1,40 +1,7 @@
+<?php
+?>
 <div class="parallax-container valign-wrapper">
-		<div class="parallax"><img src="./timg/22.jpg" alt="background img 1"></div>
-			<div class="section no-pad-bot black">
-				<h1 class="header center white-text">Trendy Publishing</h1>
-				<br> <br>
-				<h4 class="header center grey-text">Digital Engagement Tools</h4>	 
-				<br>
-			</div>
-		</div>	
-			<div class="section black">
-				<div class="row center">
-					<div class="col m4 s12">
-						<div class="icon-block">
-							<h5 class="center deep-orange-text pulse">Target</h5>
-								<a class="btn btn-floating btn-large deep-orange pulse"><i class="material-icons">video_library</i></a> 
-								<p class="white-text">Pinpoint key demographics with mathematical precision.</p>
-						</div>	
-					</div>
-						<div class="col m4 s12">
-							<div class="icon-block">
-									<h5 class="center red-text">Engage</h5>
-									<a class="btn btn-floating btn-large red pulse"><i class="material-icons">radio</i></a>
-									<p class="white-text">Push social content viral with engaged user-communities.</p>
-								</div>
-						</div>
-							<div class="col m4 s12">
-								<div class="icon-block">
-								<h5 class="center blue-text">Amplify</h5>
-								<a class="btn btn-floating btn-large blue pulse"><i class="material-icons">launch</i></a> 
-								<p class="white-text">Leverage social media to expand reach exponentially.</p>
-								</div>
-							</div> 	
-	</div>
-
-	
-	
-	
+   <div class="parallax"><img src="2.jpg" alt="background img 1"></div>
 		<div class="section black">
 	       <div class="col" id="contact">
            <h5 class="blue-text">@offices:global</h5>
@@ -95,7 +62,7 @@
 	   </div>
 	   </div>
     <div class="row">
-        <div class="col l12 s12">
+        <div class="col l12 s6">
             <h5 class="teal-text">@brand:social</h5>
            <br>
    <a class="white-text" href="#!">Facebook</a> | <a class="white-text" href="#!">Flickr</a> | <a class="white-text" href="#!">Pinterest</a> | <a class="white-text" href="#!">Snapchat</a> |  <a class="white-text" href="#!">Tumblr</a> | <a class="white-text" href="#!">LastFM</a> |  <a class="white-text" href="#!">Twitter</a> | <a class="white-text" href="#!">SoundCloud</a> | <a class="white-text" href="#!">Instagram</a> | <a class="white-text" href="#!">Vine</a> | <a class="white-text" href="#!">Google+</a> | <a class="white-text" href="#!">LinkedIn</a> |

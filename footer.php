@@ -1,40 +1,11 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package tperialize
- */
-
-?>
-<div class="clear"></div>
-</div><!-- .container -->
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'tperialize' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
+	<div class="container">		
+		<div class="footer-copyright">
 			
-			
-			
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'tperialize' ), 'tperialize', '<a href="https://automattic.com/">trendy</a>' );
-			?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+		<p style="font-size:10px"><em> ©2014-17 Trendy Publishing - All rights reserved. </em> <br>
 
-<?php wp_footer(); ?>
-
-</body>
-</html>
-
-
- 
+		<p style="font-size:8px">Any unauthorized reprint, lack of enjoyment or disappointment from this material is prohibited.  No part may be reproduced in any form or by any means, be it electronic, printed as in the ancient technique of printing press onto 'paper' and/or imaginary.
+		This includes-but-is-not-limited-to time travel, shot out of a cannon, printed onto post-it notes distributed randomly through urban centres, or by any other equally inefficient distribution methods without the expressed written, engraved and tattooed permission of the publisher. 
+		The opinions expressed by no means necessarily represent the views of anyone with the smallest notion of common sense or connection with this publication, and views should probably not be fully believed by anyone, ever... living, dead or otherwise.
+		Further information can be gained by reading the <a href="https://trendypublishing.com/terms/the-fine-print.php">terms and website conditions</a>, or alternatively by contacting the relevant department through our <a href="contact.php">contact page</a>.</p>
+		</div>    
+	</div>

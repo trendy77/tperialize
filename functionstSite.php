@@ -1,26 +1,10 @@
 <?php
-require_once(TEMPLATEPATH . '/admin/admin-functions.php');
-require_once(TEMPLATEPATH . '/admin/admin-interface.php');
-require_once(TEMPLATEPATH . '/admin/theme-settings.php');
-?>
-<?php
 add_theme_support( 'post-thumbnails' );
 add_filter( 'post_limits', 'wpcodex_filter_main_search_post_limits', 15, 2 );
 //add_filter('the_content', 'wpse_ad_T');
 add_filter('the_content', 'wpse_ad_content');
 add_theme_support('widgets');
-add_action('wp_head', 'create_meta_desc');
-
-function create_meta_desc() {
-    global $post;
-if (!is_single()) { return; }
-    $meta = strip_tags($post->post_content);
-    $meta = strip_shortcodes($post->post_content);
-    $meta = str_replace(array("\n", "\r", "\t"), ' ', $meta);
-    $meta = substr($meta, 0, 125);
-    echo "<meta name='description' content='$meta' />";
-}
-
+//add_action('wp_head', 'create_meta_desc');
 
 /*
  * Update ALL PUBLISHED posts and pages with the controller post_meta required by the main code
@@ -131,6 +115,80 @@ function switchHead(){
 	}
 }
 
+function getGappsTag(){
+	
+	
+	echo 'UA-84079763-11';
+	
+}
+
+function getGTM(){
+
+}
+ 
+ 
+function fbappid(){	
+
+}
+
+ 
+function socialLinks(){
+$url = home_url();
+if ($url == 'http://organisemybiz.com' ||  'http://es.organisemybiz.com'){
+echo '<span>Get the latest news @socialMedia </span>
+		<ul class="social-media footer-social">
+		<li><a class="sm-twitter" href="https://www.twitter.com/organisemybiz"><span>Twitter</span></a></li>
+		<li><a class="sm-facebook" href="https://www.facebook.com/OrganiseBiz"><span>Facebook</span></a></li>
+		<li><a class="sm-pinterest" href="https://www.pinterest.com/organisemybiz"><span>Pinterest</span></a></li>
+		<li><a class="sm-instagram" href="https://www.instagram.com/organisemybiz/"><span>Instagram</span></a></li>
+		</ul>';
+	} else if ($url == 'http://vapedirectory.co'){
+	echo '<span>Get the latest news @socialMedia</span>
+		<ul class="social-media footer-social">
+		<li><a class="sm-twitter" href="https://www.twitter.com/vapedirectoryau/"><span>Twitter</span></a></li>
+		<li><a class="sm-facebook" href="https://www.facebook.com/vapeDirectory.co/"><span>Facebook</span></a></li>
+		<li><a class="sm-pinterest" href="https://www.pinterest.com/vapedirectory/"><span>Pinterest</span></a></li>
+		<li><a class="sm-instagram" href="https://www.instagram.com/vapedirectory/"><span>Instagram</span></a></li>
+		</ul>';
+	} else if ($url == 'http://globetravelsearch.com'){
+	echo '<span>Get the latest news @socialMedia</span>
+		<ul class="social-media footer-social">
+		<li><a class="sm-twitter" href="https://www.twitter.com/globetravel/"><span>Twitter</span></a></li>
+		<li><a class="sm-facebook" href="https://www.facebook.com/globetravelsearch/"><span>Facebook</span></a></li>
+		<li><a class="sm-pinterest" href="https://www.pinterest.com/globetravelsearch/"><span>Pinterest</span></a></li>
+		<li><a class="sm-instagram" href="https://www.instagram.com/globetravelsearch/"><span>Instagram</span></a></li>
+		</ul>';
+		
+	} else if ($url == 'http://womenstylechannel.com'){
+	echo '<span>Get the latest news @socialMedia</span>
+		<ul class="social-media footer-social">
+		<li><a class="sm-twitter" href="https://www.twitter.com/vapedirectoryau/"><span>Twitter</span></a></li>
+		<li><a class="sm-facebook" href="https://www.facebook.com/vapeDirectory.co/"><span>Facebook</span></a></li>
+		<li><a class="sm-pinterest" href="https://www.pinterest.com/vapedirectory/"><span>Pinterest</span></a></li>
+		<li><a class="sm-instagram" href="https://www.instagram.com/vapedirectory/"><span>Instagram</span></a></li>
+		</ul>';
+	
+	} else if ($url ==  'http://customkitsworldwide.com' || 'http://es.customkitsworldwide.com'){
+	echo '<span>Get the latest news @socialMedia</span>
+		<ul class="social-media footer-social">		
+		<li><a class="sm-twitter" href="https://www.twitter.com/customkitworldwide"><span>Twitter</span></a></li>
+		<li><a class="sm-facebook" href="https://www.facebook.com/customkitworldwide/"><span>Facebook</span></a></li>
+		<li><a class="sm-pinterest" href="https://www.pinterest.com/customkitworldwide"><span>Pinterest</span></a></li>		
+		<li><a class="sm-instagram" href="https://www.instagram.com/customkitworldwide/"><span>Instagram</span></a></li>
+		</ul>';	
+	} else if($url ==  'http://fakenewsregistry.org' || 'http://fakenewsregistry.org/es'){
+	echo '<span>Get the latest news @socialMedia</span>
+		<ul class="social-media footer-social">
+		<li><a class="sm-twitter" href="https://www.twitter.com/news_sans_fact"><span>Twitter</span></a></li>		<li><a class="sm-facebook" href="https://www.facebook.com/fakenewsregistry"><span>Facebook</span></a></li>		<li><a class="sm-pinterest" href="https://www.pinterest.com/fakenewsregistry"><span>Pinterest</span></a></li>		<li><a class="sm-instagram" href="https://www.instagram.com/fakenewsregistry"><span>Instagram</span></a></li>
+		</ul>';	
+	} else if ($url == 'http://govnews.info'){
+		echo '<span>Get the latest news @socialMedia</span>	<ul class="social-media footer-social">	<li><a class="sm-twitter" href="https://www.twitter.com/vapedirectoryau/"><span>Twitter</span></a></li>		<li><a class="sm-facebook" href="https://www.facebook.com/vapeDirectory.co/"><span>Facebook</span></a></li>
+		<li><a class="sm-pinterest" href="https://www.pinterest.com/vapedirectory/"><span>Pinterest</span></a></li>		<li><a class="sm-instagram" href="https://www.instagram.com/vapedirectory/"><span>Instagram</span></a></li></ul>';		
+	
+		}else if ($url == 'http://trendypublishing.com' ||'http://trendypublishing.com.au'){
+			echo '<span>Get the latest news @socialMedia </span><ul class="social-media footer-social">	<li><a class="sm-twitter" href="https://www.twitter.com/trendypublishing"><span>Twitter</span></a></li>	<li><a class="sm-facebook" href="https://www.facebook.com/trendy"><span>Facebook</span></a></li><li><a class="sm-pinterest" href="https://www.pinterest.com/trendypublishing"><span>Pinterest</span></a></li>		<li><a class="sm-instagram" href="https://www.instagram.com/trendypublishing"><span>Instagram</span></a></li></ul>';
+		}
+	}
  
 # electronics advert?
 function amazonAdvert($choice){
@@ -154,7 +212,31 @@ amzn_assoc_linkid = "7cb74259967239132c8f3fb8d9b5150d";amzn_assoc_asins = "B01MR
 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>'; break;
 }
 } 
+ 
+ 
 
+//add_action(  'publish_post',  'add_hashTags', 10, 2 );
+function add_hashTags( $ID ) {
+    $post = get_post( $ID );
+	$url1 = $post->$post_name;  // get the slug
+	$url= bloginfo('url') .'/'. $url1;// your post title
+	$APPLICATION_ID = '4ecd9e16';
+$APPLICATION_KEY='be54f0e53443501357865cbc055538aa';
+  $ch = curl_init('https://api.aylien.com/api/v1/hashtags');
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+    'Accept: application/json',
+    'X-AYLIEN-TextAPI-Application-Key: ' . APPLICATION_KEY,
+    'X-AYLIEN-TextAPI-Application-ID: '. APPLICATION_ID
+  ));
+  curl_setopt($ch, CURLOPT_POST, true);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, $url);
+  $response = curl_exec($ch);
+   $keywords= json_decode($response);
+  	 wp_set_post_tags( $ID, $keywords, true );
+  echo 'ID#' . $ID . 'Now has tags:' . $keywords   } ;
+} 
+ 
  
 function wpcodex_filter_main_search_post_limits( $limit, $query ) {
 	if ( ! is_admin() && $query->is_main_query() && $query->is_search() ) {
