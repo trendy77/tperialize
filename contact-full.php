@@ -8,10 +8,7 @@
 
 </head>
   <body>
-  
-  
-
-  <header>
+ <header>
  
 <?php include ('navi.php'); ?>
  </header>
@@ -22,7 +19,7 @@
 
 
   <div class="parallax-container valign-wrapper">
-      <div class="parallax"><img src="timg/1.jpeg" alt="background img 1"></div>
+      <div class="parallax"><img src="timg/sm5.jpeg" alt="background img 1"></div>
        </div> 
 	
    <?php include('fbFeed.php'); ?>
