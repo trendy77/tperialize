@@ -1,75 +1,60 @@
-<?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package tperialize
- */
+<?php include('header.php'); ?>
+<div class="parallax"><img src="timg/1.jpeg" alt="background img 1"></div>
+</div>	
 
-get_header(); ?>
+<div class="section no-pad-bot black">
+	<h1 class="header center white-text">Trendy Publishing</h1>
+	<br> <br>
+	<h4 class="header center grey-text">Digital Engagement Tools</h4>	 
+	<br>
+</div>
 
-<main>
-      <div class="parallax-container valign-wrapper">
-       <div class="parallax"><img src="timg/sm5.jpeg" alt="background img 1"></div>
- <?php include ('t1.php'); ?>    
-  </div>
-    <div class="section black">
- 			<?php include('m1.php'); ?>	
-			</div>  
-				<div class="section">
-					<div class="parallax-container valign-wrapper">
-					<div class="parallax"><img src="timg/sm2.jpeg" alt="background img 1"></div>
-					<div class="container black no-padding">
-					<div class="row">
-   	<div class="col s6">
+	<div id="index-banner" class="parallax-container">	
+</div>
+	<div class="container">
+    	<div class="section black">
+			<div class="row center">
+				<div class="col m4 s12">
+					<div class="icon-block">
+								<h5 class="center green-text pulse">Target</h5>
+								<a class="btn btn-floating btn-large green pulse"><i class="material-icons">search</i></a> 
+								<p class="white-text">Pinpoint key demographics within fragemented market segments using derivative behavioural analysis.</p>
+					</div>	
+				</div>
+					<div class="col m4 s12">
+						<div class="icon-block">
+									<h5 class="center red-text">Engage</h5>
+									<a class="btn btn-floating btn-large red pulse"><i class="material-icons">touch_app</i></a>
+									<p class="white-text">Push social content viral with pre-engaged user-communities across multiple touchpoints.</p>
+						</div>
+					</div>
+						<div class="col m4 s12">
+							<div class="icon-block">
+								<h5 class="center blue-text">Amplify</h5>
+								<a class="btn btn-floating btn-large blue pulse"><i class="material-icons">supervisor_account</i></a> 
+								<p class="white-text">Leverage social media to expand your reach exponentially - do more with every dollar.</p>
+						</div>
+				</div> 	
+			</div>
+		</div> 	
+	</div>
 	
- <?php if ( have_posts() ) : ?>
+
+		<?php include ('midTemp.php'); ?>
+
+		</div>
+	</div>
+
  
- <?php /* Start the Loop */ ?>
- <?php while ( have_posts() ) : the_post(); ?>
+   <div class="section">
+ 		<div class="container light black">
  
- <?php
- /* Include the Post-Format-specific template for the content.
- * If you want to override this in a child theme, then include a file
- * called content-___.php (where ___ is the Post Format name) and that will be used instead.
- */
- get_template_part( 'content', get_post_format() );
- ?>
- 
- <?php endwhile; ?>
- 
- <?php the_posts_navigation(); ?>
- 
- <?php else : ?>
- 
- <?php get_template_part( 'content', 'none' ); ?>
- 
- <?php endif; ?>
-  </div>
-   </div>
-    </div>
-	 </div>
-	  </div>
-	   
-  
- </main><!-- #main -->
- </div><!-- #primary -->
- 
-	
- <div class="row">
-   <div id="primary" class="content-area col s12 m7 l8">
- <main id="main" class="site-main" role="main">
- 
- 
- 
- 
- 
- <?php get_sidebar(); ?>
- </div><!-- /row -->
-<?php get_footer(); ?>
+ 	SPECIFIC PAGE CONTENT HERE 
+
+		</div>
+	</div>
+
+
+<?php	include_once('botTemp.php');	  ?>
+ </body>
+</html>
