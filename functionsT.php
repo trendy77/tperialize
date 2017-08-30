@@ -49,6 +49,7 @@ echo "
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
   
+
 function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -104,15 +105,7 @@ function testAPI() {
                     fjs.parentNode.insertBefore(js, fjs);
                 }
             }(document, 'script', 'twitter-wjs');
-        </script>
-    amzn_assoc_ad_type = 'link_enhancement_widget';
-    amzn_assoc_tracking_id = 'trendypublish-20';
-    amzn_assoc_linkid = '2c83128ca173ab69602d5dc34e734840';
-    amzn_assoc_placement = '';
-    amzn_assoc_marketplace = 'amazon';
-    amzn_assoc_region = 'US';
-</script>
-<script src='//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=US'></script>";
+        </script>";
 	return; 
 }
 
